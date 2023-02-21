@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hk69(w@s4f=^!fj+05lb#cri!=#)i1(q&8@^iwv6#tqxpv#yc_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app' , '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app' , '.now.sh','127.0.0.1']
 
 
 # Application definition
@@ -135,8 +135,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
 
-import os
-STATIC_URL = 'static/'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
 
